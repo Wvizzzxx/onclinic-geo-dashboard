@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Голос бренда — Research UI Kit v2.3.2 · CJM-first</title>
+<link rel="stylesheet" href="ui-kit.css">
+<link rel="stylesheet" href="aisov-icons.css">
+</head>
+<body data-mobile-handoff="true">
+<header class="masthead">
+  <div class="wrap masthead__row">
+    <a class="brand" href="#top"><img src="logo-mark.png" alt=""><span>Голос бренда</span></a>
+    <nav class="nav">
+      <a class="is-active" href="#foundations">Основа</a>
+      <a href="#controls">Контролы</a>
+      <a href="#research">Исследования</a>
+      <a href="#cjm">CJM</a>
+      <a href="#data">Данные</a>
+      <a href="#narrative">Инсайты</a>
+      <a href="#patterns">Паттерны</a>
+      <a href="#responsive">Адаптив</a>
+      <a href="#icons">Иконки</a>
+    </nav>
+    <span class="tag tag--brand">UI Kit · v2.3.2</span>
+  </div>
+</header>
+
+<main id="top">
+<section class="kit-hero">
+  <div class="wrap kit-hero__row">
+    <div>
+      <div class="eyebrow">AISOV / ГОЛОС БРЕНДА</div>
+      <h1 class="display">Research UI Kit</h1>
+      <p class="lead">Система компонентов для исследований, аналитических отчётов и продуктовых экранов. Базовый режим — светлый editorial/data; тёмный брендовый режим используется как акцент для обложек и крупных секций.</p>
+      <div class="tags" style="margin-top:22px">
+        <span class="tag">8px grid</span><span class="tag">12-col layout</span><span class="tag">Data-first</span><span class="tag">Responsive</span><span class="tag">Light + Dark accent</span>
+      </div>
+    </div>
+    <aside class="kit-hero__card">
+      <div class="brand" style="font-size:20px"><img src="logo-mark.png" alt=""><span>Голос бренда</span></div>
+      <div class="rule"></div>
+      <div class="small">Основной брендовый цвет</div>
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-top:8px">
+        <strong style="font-size:34px;color:var(--brand-700)">#1B3FAA</strong>
+        <span class="tag tag--brand">Brand 700</span>
+      </div>
+      <p class="small">Для CTA, активных состояний, ключевой серии на графиках и брендовых акцентов.</p>
+    </aside>
+  </div>
+</section>
+
+<section id="foundations" class="section section--white">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">01 · FOUNDATIONS</div><h2 class="h1">Основа визуальной системы</h2><p class="lead">Минимум декоративного шума, высокая читаемость цифр и узнаваемый синий акцент.</p></div></div>
+    <p class="component-title">Brand palette</p>
+    <div class="swatches">
+      <div class="swatch" style="background:#0B173F;color:#fff">950</div>
+      <div class="swatch" style="background:#163182;color:#fff">800</div>
+      <div class="swatch" style="background:#1B3FAA;color:#fff">700</div>
+      <div class="swatch" style="background:#315FDB;color:#fff">500</div>
+      <div class="swatch" style="background:#8EA6EE;color:#10245F">300</div>
+      <div class="swatch" style="background:#F4F7FF;color:#1B3FAA;border:1px solid #C3D0F7">50</div>
+    </div>
+
+    <div class="two-col" style="margin-top:40px">
+      <div class="card card__pad-lg">
+        <p class="component-title">Typography</p>
+        <h1 class="h1">Заголовок исследования</h1>
+        <h2 class="h2" style="margin-top:20px">Заголовок аналитического блока</h2>
+        <h3 class="h3" style="margin-top:18px">Локальный вывод или карточка</h3>
+        <p class="lead">Лид на 1–3 строки объясняет, что пользователь увидит дальше.</p>
+        <p>Основной текст используется для пояснений, методологии и интерпретации данных.</p>
+        <p class="small">Мелкий текст — подписи, легенды, вспомогательные метрики.</p>
+        <p class="caption">CAPTION / 12 PX / MEDIUM</p>
+        <p class="small" style="margin-top:18px">Минимум 12 px для любого видимого текста, включая SVG. Основной текст — 16 px, пояснения — 14 px; на телефоне не уменьшать body и поля ввода ниже 16 px. Длинные подписи переносить, не обрезать.</p>
+      </div>
+      <div class="card card__pad-lg">
+        <p class="component-title">Radii & surfaces</p>
+        <div class="example-stack">
+          <div class="card card__pad" style="border-radius:8px">Radius 8 · компактные элементы</div>
+          <div class="card card__pad" style="border-radius:12px">Radius 12 · поля и небольшие карточки</div>
+          <div class="card card__pad" style="border-radius:16px">Radius 16 · аналитические карточки</div>
+          <div class="card card__pad card--raised" style="border-radius:24px">Radius 24 · hero / feature surfaces</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="controls" class="section">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">02 · CONTROLS</div><h2 class="h1">Навигация, фильтры и состояния</h2></div></div>
+    <div class="two-col">
+      <div class="card card__pad-lg">
+        <p class="component-title">Buttons & tags</p>
+        <div class="tags" style="margin-bottom:18px">
+          <button class="btn btn--primary">Скачать PDF</button>
+          <button class="btn btn--secondary">Открыть данные</button>
+          <button class="btn btn--ghost">Подробнее →</button>
+        </div>
+        <div class="tags">
+          <span class="tag tag--brand"><span class="tag__dot"></span>AI-модель</span>
+          <span class="tag tag--success">Рост</span>
+          <span class="tag tag--warning">Сигнал</span>
+          <span class="tag tag--danger">Риск</span>
+          <span class="tag">Источник</span>
+        </div>
+        <p class="code-note">.btn · .tag · semantic states</p>
+      </div>
+      <div class="card card__pad-lg">
+        <p class="component-title">Segmented / chips</p>
+        <div class="segmented"><button class="is-active">Все</button><button>AI-модели</button><button>ИИ-выдача</button></div>
+        <div class="tags" style="margin-top:18px">
+          <button class="chip is-active">Все каналы</button><button class="chip">ChatGPT</button><button class="chip">Gemini</button><button class="chip">DeepSeek</button>
+        </div>
+      </div>
+    </div>
+    <div class="card card__pad-lg" style="margin-top:20px">
+      <p class="component-title">Search + filters</p>
+      <div class="filters">
+        <div class="field"><label>Поиск бренда или сайта</label><input class="input" placeholder="Например, Bosch или auto.ru"></div>
+        <div class="field"><label>AI-канал</label><select class="select"><option>Все 8 каналов</option><option>ChatGPT</option><option>DeepSeek</option><option>Gemini</option></select></div>
+        <div class="field"><label>Регион</label><select class="select"><option>Все регионы</option><option>Москва</option><option>Санкт-Петербург</option></select></div>
+        <button class="btn btn--secondary">Сбросить</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="section section--white">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">03 · RESEARCH BLOCKS</div><h2 class="h1">Базовые блоки исследования</h2><p class="lead">Это не структура исследования, а набор готовых визуальных элементов, которые можно комбинировать в любом порядке.</p></div></div>
+  </div>
+
+  <div class="research-hero">
+    <div class="wrap">
+      <div class="research-hero__inner">
+        <div>
+          <div class="eyebrow">GEO-исследование · Сентябрь 2026</div>
+          <h1>Как AI формирует выбор в категории</h1>
+          <p>Крупный editorial hero: короткий тезис, дата, CTA и визуальный акцент. Для конкретного исследования справа заменяется на предметный арт или data-art.</p>
+          <div class="hero-actions"><a class="btn btn--primary" style="background:#fff;color:#163182">Скачать PDF</a><a class="btn btn--secondary" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.25)">Методология</a></div>
+        </div>
+        <div class="hero-art"><img class="hero-mark" src="logo-mark.png" alt=""></div>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>1 500</strong><span>запросов</span></div>
+        <div class="hero-stat"><strong>8</strong><span>AI-каналов</span></div>
+        <div class="hero-stat"><strong>59 527</strong><span>сущностей</span></div>
+        <div class="hero-stat"><strong>27 972</strong><span>цитат и ссылок</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" style="padding-top:40px">
+    <p class="component-title">KPI cards</p>
+    <div class="metric-grid">
+      <div class="metric card"><div class="metric__top"><span class="metric__label">Видимость</span><span class="metric__delta up">+12,4%</span></div><div class="metric__value">34,2%</div><div class="metric__foot">от всех ответов</div></div>
+      <div class="metric card"><div class="metric__top"><span class="metric__label">Доля голоса</span><span class="metric__delta up">+3,1 п.п.</span></div><div class="metric__value">18,6%</div><div class="metric__foot">в конкурентном срезе</div></div>
+      <div class="metric card"><div class="metric__top"><span class="metric__label">Средняя позиция</span><span class="metric__delta down">−0,4</span></div><div class="metric__value">2,3</div><div class="metric__foot">меньше — выше</div></div>
+      <div class="metric card metric--brand"><div class="metric__top"><span class="metric__label">AISOV</span><span class="tag" style="border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.10);color:#fff">индекс</span></div><div class="metric__value">8,7%</div><div class="metric__foot">сводный показатель</div></div>
+    </div>
+
+
+    <p class="component-title" style="margin-top:42px">CJM-first methodology · Research engine</p>
+    <div class="method-engine" aria-label="Методология CJM-first исследования">
+      <div class="method-engine__intro">
+        <div>
+          <div class="eyebrow">Ключевой методологический паттерн</div>
+          <h3>CJM — каркас исследования, а не промежуточный шаг</h3>
+          <p>Исследование начинается с пути принятия решения. По каждому этапу фиксируем задачу пользователя и вопросы, затем одинаково проверяем их во всех AI-каналах и читаем результат по этапам CJM.</p>
+        </div>
+        <span class="method-engine__badge"><span class="a-icon a-icon--route a-icon--sm"></span>CJM-FIRST</span>
+      </div>
+
+      <div class="method-engine__grid">
+        <aside class="method-side method-side--left" aria-label="Входные сигналы">
+          <div class="method-side__label"><span class="a-icon a-icon--layers a-icon--sm"></span>1 · Входные сигналы</div>
+          <div class="method-source"><span class="method-source__icon"><span class="a-icon a-icon--search a-icon--sm"></span></span><div><b>Поисковый спрос</b><small>Запросы, формулировки задач и вопросов.</small></div></div>
+          <div class="method-source"><span class="method-source__icon"><span class="a-icon a-icon--list-filter a-icon--sm"></span></span><div><b>Контекст категории</b><small>Сегменты, критерии выбора, сценарии и регион.</small></div></div>
+          <div class="method-source"><span class="method-source__icon"><span class="a-icon a-icon--message-circle a-icon--sm"></span></span><div><b>Дополнительный evidence</b><small>Отзывы, интервью и support-данные — если доступны.</small></div></div>
+        </aside>
+
+        <section class="method-core" aria-label="Карта принятия решения">
+          <div class="method-core__label">
+            <strong>2 · Строим карту принятия решения</strong>
+            <span>3–7 этапов · адаптируются под категорию</span>
+          </div>
+          <ol class="method-journey">
+            <li class="method-stage"><div class="method-stage__icon"><span class="a-icon a-icon--lightbulb"></span></div><b>Потребность</b><small>что произошло?</small></li>
+            <li class="method-stage"><div class="method-stage__icon"><span class="a-icon a-icon--search"></span></div><b>Исследование</b><small>что мне подходит?</small></li>
+            <li class="method-stage is-key"><div class="method-stage__icon"><span class="a-icon a-icon--scale"></span></div><b>Выбор решения</b><small>что покупать?</small></li>
+            <li class="method-stage"><div class="method-stage__icon"><span class="a-icon a-icon--git-compare"></span></div><b>Сравнение</b><small>какой бренд?</small></li>
+            <li class="method-stage"><div class="method-stage__icon"><span class="a-icon a-icon--shopping-cart"></span></div><b>Действие</b><small>где и как?</small></li>
+            <li class="method-stage"><div class="method-stage__icon"><span class="a-icon a-icon--arrow-right"></span></div><b>Опыт</b><small>что дальше?</small></li>
+          </ol>
+
+          <div class="method-lens">
+            <div class="method-lens__head"><strong>Для каждого этапа задаём один и тот же аналитический каркас</strong><span>пример: «Выбор решения»</span></div>
+            <div class="method-lens__item"><span class="a-icon a-icon--target"></span><div><b>Цель пользователя</b><small>Какое решение он пытается принять.</small></div></div>
+            <div class="method-lens__item"><span class="a-icon a-icon--circle-help"></span><div><b>Вопросы и интенты</b><small>Какими формулировками пользователь обращается к AI.</small></div></div>
+            <div class="method-lens__item"><span class="a-icon a-icon--triangle-alert"></span><div><b>Критерии и барьеры</b><small>Что ограничивает или меняет выбор.</small></div></div>
+            <div class="method-lens__item"><span class="a-icon a-icon--bot"></span><div><b>Роль AI</b><small>Диагностирует, объясняет, сравнивает или рекомендует.</small></div></div>
+          </div>
+        </section>
+
+        <aside class="method-side method-side--right" aria-label="Единый AI-замер">
+          <div class="method-side__label"><span class="a-icon a-icon--workflow a-icon--sm"></span>3 · Единый AI-замер</div>
+          <div class="method-source"><span class="method-source__icon"><span class="a-icon a-icon--file-text a-icon--sm"></span></span><div><b>Промпт-корпус</b><small>Каждый вопрос привязан к этапу CJM, интенту и срезу.</small></div></div>
+          <div class="method-source"><span class="method-source__icon"><span class="a-icon a-icon--bot a-icon--sm"></span></span><div><b>Одинаковые AI-каналы</b><small>Один корпус прогоняется по всем моделям и поисковой AI-выдаче.</small></div></div>
+          <div class="method-source"><span class="method-source__icon"><span class="a-icon a-icon--database a-icon--sm"></span></span><div><b>Ответы и источники</b><small>Извлекаем бренды, позиции, рекомендации, тональность и цитаты.</small></div></div>
+        </aside>
+      </div>
+
+      <div class="method-output">
+        <div class="method-output__title">4 · Читаем результат по этапам<small>Метрики остаются теми же, меняется контекст их интерпретации.</small></div>
+        <div class="method-output__rail" aria-label="Метрики результата">
+          <span class="tag tag--brand">Видимость по этапу</span><span class="method-arrow">→</span>
+          <span class="tag">SOV</span><span class="tag">Позиция</span><span class="tag">Рекомендация</span><span class="tag">Цитирование</span><span class="tag">Тональность</span>
+          <span class="method-arrow">→</span><span class="tag tag--success">Зоны роста</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-chip-row" style="margin-top:16px">
+      <span class="ai-chip"><img src="assets/ai/chatgpt.svg" alt="">ChatGPT</span>
+      <span class="ai-chip"><img src="assets/ai/deepseek.svg" alt="">DeepSeek</span>
+      <span class="ai-chip"><img src="assets/ai/gemini.svg" alt="">Gemini</span>
+      <span class="ai-chip"><img src="assets/ai/gigachat.svg" alt="">GigaChat</span>
+      <span class="ai-chip"><img src="assets/ai/perplexity.svg" alt="">Perplexity</span>
+      <span class="ai-chip"><img src="assets/ai/yandexgpt.svg" alt="">Алиса AI</span>
+      <span class="ai-chip"><img src="assets/ai/google-ai-overview.svg" alt="">Google AI Overview</span>
+      <span class="ai-chip"><img src="assets/ai/alice-search.svg" alt="">Alice AI на поиске</span>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="cjm" class="section section--soft">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <div class="eyebrow">04 · CJM SYSTEM</div>
+        <h2 class="h1">CJM как фирменный язык исследования</h2>
+        <p class="lead">Не фиксируем одну универсальную воронку. Сохраняем единый визуальный каркас, а этапы, цели и вопросы адаптируем под рынок: телеком, недвижимость, e-commerce, финансы, медицина и т.д.</p>
+      </div>
+      <span class="tag tag--brand">Core USP</span>
+    </div>
+
+    <div class="cjm-principle">
+      <div>
+        <div class="eyebrow" style="color:#AFC1FF">DESIGN PRINCIPLE</div>
+        <h3>Показываем не «рейтинг AI», а путь решения пользователя через AI</h3>
+        <p>Для каждого этапа CJM связываем пользовательскую задачу с реальными вопросами, ролью AI и наблюдаемыми сигналами бренда. Так исследование объясняет <b>где именно AI влияет на выбор</b>, а не только считает общую видимость.</p>
+      </div>
+      <div class="cjm-principle__rule">
+        <b>Обязательные слои</b>
+        <span>→ цель пользователя</span>
+        <span>→ вопрос / интент / сценарий</span>
+        <span>→ критерий или барьер выбора</span>
+        <span>→ роль AI на этапе</span>
+        <span>→ измеряемый сигнал и opportunity</span>
+        <b style="margin-top:12px">Опционально, только при evidence</b>
+        <span>→ мысли / эмоции / цитаты пользователей</span>
+      </div>
+    </div>
+
+    <p class="component-title" style="margin-top:34px">CJM overview · 3–7 этапов</p>
+    <div class="card cjm-map-card">
+      <div class="cjm-map-card__head">
+        <div><h3>Карта пути выбора</h3><p>Шесть колонок — пример. Компонент должен растягиваться под реальную длину пути, а не заставлять исследование укладываться в один шаблон.</p></div>
+        <span class="tag">Horizontal rail</span>
+      </div>
+      <div class="cjm-stage-rail">
+        <div class="cjm-stage-card"><div class="cjm-stage-card__top"><span class="cjm-stage-card__no">01</span><span class="cjm-stage-card__icon"><span class="a-icon a-icon--lightbulb a-icon--sm"></span></span></div><h4>Возникновение потребности</h4><p>Понять, есть ли проблема и нужно ли действовать.</p><div class="cjm-q">«Нужно ли мне вообще…?»</div></div>
+        <div class="cjm-stage-card"><div class="cjm-stage-card__top"><span class="cjm-stage-card__no">02</span><span class="cjm-stage-card__icon"><span class="a-icon a-icon--search a-icon--sm"></span></span></div><h4>Диагностика / исследование</h4><p>Определить требования и подходящие варианты.</p><div class="cjm-q">«Что подойдет в моей ситуации?»</div></div>
+        <div class="cjm-stage-card"><div class="cjm-stage-card__top"><span class="cjm-stage-card__no">03</span><span class="cjm-stage-card__icon"><span class="a-icon a-icon--scale a-icon--sm"></span></span></div><h4>Выбор решения</h4><p>Определиться с типом продукта или способом действия.</p><div class="cjm-q">«Какое решение лучше?»</div></div>
+        <div class="cjm-stage-card"><div class="cjm-stage-card__top"><span class="cjm-stage-card__no">04</span><span class="cjm-stage-card__icon"><span class="a-icon a-icon--git-compare a-icon--sm"></span></span></div><h4>Сравнение брендов</h4><p>Сопоставить бренды по критериям выбора.</p><div class="cjm-q">«A или B — что выбрать?»</div></div>
+        <div class="cjm-stage-card"><div class="cjm-stage-card__top"><span class="cjm-stage-card__no">05</span><span class="cjm-stage-card__icon"><span class="a-icon a-icon--shopping-cart a-icon--sm"></span></span></div><h4>Покупка / действие</h4><p>Найти способ купить, подключить или оформить.</p><div class="cjm-q">«Где и как это сделать?»</div></div>
+        <div class="cjm-stage-card"><div class="cjm-stage-card__top"><span class="cjm-stage-card__no">06</span><span class="cjm-stage-card__icon"><span class="a-icon a-icon--wrench a-icon--sm"></span></span></div><h4>Опыт / поддержка</h4><p>Разобраться с использованием, возвратом или повтором.</p><div class="cjm-q">«Что делать после покупки?»</div></div>
+      </div>
+    </div>
+
+    
+    <p class="component-title" style="margin-top:34px">CJM layers · подробная карта</p>
+    <div class="card cjm-layerboard">
+      <div class="cjm-layerboard__head">
+        <div>
+          <h3>Что меняется от этапа к этапу</h3>
+          <p>Вместо плотной таблицы — карточки этапов с одинаковой внутренней логикой. Такой формат легче читать в исследовании и проще адаптировать под 3–7 этапов.</p>
+        </div>
+        <div class="cjm-layerboard__legend" aria-label="Слои CJM">
+          <span><i class="a-icon a-icon--target a-icon--sm"></i> цель</span>
+          <span><i class="a-icon a-icon--circle-help a-icon--sm"></i> вопрос</span>
+          <span><i class="a-icon a-icon--triangle-alert a-icon--sm"></i> барьер</span>
+          <span><i class="a-icon a-icon--bot a-icon--sm"></i> роль AI</span>
+        </div>
+      </div>
+      <div class="cjm-layerboard__rail" role="list" aria-label="Этапы CJM">
+        <article class="cjm-layer-stage" role="listitem">
+          <div class="cjm-layer-stage__cap"><span>01</span><b>Потребность</b></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--target a-icon--sm"></i><div><small>Цель</small><strong>Понять проблему</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--circle-help a-icon--sm"></i><div><small>Вопрос</small><strong>«Нужно ли?»</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--triangle-alert a-icon--sm"></i><div><small>Барьер</small><strong>Срочность</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--bot a-icon--sm"></i><div><small>Роль AI</small><strong>Диагностирует</strong></div></div>
+          <div class="cjm-layer-stage__signal"><span>Сигнал</span><b>Категория / бренд</b></div>
+        </article>
+        <article class="cjm-layer-stage" role="listitem">
+          <div class="cjm-layer-stage__cap"><span>02</span><b>Исследование</b></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--target a-icon--sm"></i><div><small>Цель</small><strong>Собрать критерии</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--circle-help a-icon--sm"></i><div><small>Вопрос</small><strong>«Как подобрать?»</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--triangle-alert a-icon--sm"></i><div><small>Барьер</small><strong>Параметры</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--bot a-icon--sm"></i><div><small>Роль AI</small><strong>Уточняет</strong></div></div>
+          <div class="cjm-layer-stage__signal"><span>Сигнал</span><b>Применимость</b></div>
+        </article>
+        <article class="cjm-layer-stage is-accent" role="listitem">
+          <div class="cjm-layer-stage__cap"><span>03</span><b>Решение</b></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--target a-icon--sm"></i><div><small>Цель</small><strong>Выбрать подход</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--circle-help a-icon--sm"></i><div><small>Вопрос</small><strong>«Что лучше?»</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--triangle-alert a-icon--sm"></i><div><small>Барьер</small><strong>Цена / риск</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--bot a-icon--sm"></i><div><small>Роль AI</small><strong>Объясняет</strong></div></div>
+          <div class="cjm-layer-stage__signal"><span>Сигнал</span><b>Рекомендация</b></div>
+        </article>
+        <article class="cjm-layer-stage" role="listitem">
+          <div class="cjm-layer-stage__cap"><span>04</span><b>Сравнение</b></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--target a-icon--sm"></i><div><small>Цель</small><strong>Выбрать бренд</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--circle-help a-icon--sm"></i><div><small>Вопрос</small><strong>«A или B?»</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--triangle-alert a-icon--sm"></i><div><small>Барьер</small><strong>Доверие</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--bot a-icon--sm"></i><div><small>Роль AI</small><strong>Рекомендует</strong></div></div>
+          <div class="cjm-layer-stage__signal"><span>Сигнал</span><b>SOV / позиция</b></div>
+        </article>
+        <article class="cjm-layer-stage" role="listitem">
+          <div class="cjm-layer-stage__cap"><span>05</span><b>Действие</b></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--target a-icon--sm"></i><div><small>Цель</small><strong>Совершить действие</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--circle-help a-icon--sm"></i><div><small>Вопрос</small><strong>«Где купить?»</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--triangle-alert a-icon--sm"></i><div><small>Барьер</small><strong>Условия</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--bot a-icon--sm"></i><div><small>Роль AI</small><strong>Навигирует</strong></div></div>
+          <div class="cjm-layer-stage__signal"><span>Сигнал</span><b>Продавцы / ссылки</b></div>
+        </article>
+        <article class="cjm-layer-stage" role="listitem">
+          <div class="cjm-layer-stage__cap"><span>06</span><b>Опыт</b></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--target a-icon--sm"></i><div><small>Цель</small><strong>Решить вопрос</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--circle-help a-icon--sm"></i><div><small>Вопрос</small><strong>«Что делать?»</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--triangle-alert a-icon--sm"></i><div><small>Барьер</small><strong>Сервис</strong></div></div>
+          <div class="cjm-layer-stage__item"><i class="a-icon a-icon--bot a-icon--sm"></i><div><small>Роль AI</small><strong>Поддерживает</strong></div></div>
+          <div class="cjm-layer-stage__signal"><span>Сигнал</span><b>Репутация / источники</b></div>
+        </article>
+      </div>
+    </div>
+</div>
+
+    <p class="component-title" style="margin-top:34px">CJM performance funnel · референс МегаФона</p>
+    
+    <div class="card cjm-funnel-card">
+      <div class="cjm-map-card__head">
+        <div><h3>Видимость бренда по этапам CJM</h3><p>Фокус-бренд сравнивается с лидером каждого этапа. Справа сразу показано, <b>кто лидер</b>, его значение и разрыв — так график отвечает на три вопроса: где мы сильны, кому уступаем и насколько.</p></div>
+        <span class="tag tag--brand">Stage benchmark</span>
+      </div>
+
+      <div class="cjm-benchmark-head">
+        <div></div><div>Этап</div><div class="cjm-benchmark-head__bars"><span>Фокус-бренд</span><span>Лидер этапа</span></div><div>Лидер / разрыв</div>
+      </div>
+
+      <div class="cjm-benchmark">
+        <div class="cjm-benchmark__row">
+          <div class="cjm-benchmark__num">1</div>
+          <div class="cjm-benchmark__stage"><b>Осознание потребности</b><small>Нужно ли мне решение?</small></div>
+          <div class="cjm-benchmark__visual">
+            <div class="cjm-benchmark__barrow"><span class="cjm-benchmark__label">Фокус-бренд</span><div class="cjm-benchmark__track"><i class="brand" style="width:58.4%"></i></div><b>58,4%</b></div>
+            <div class="cjm-benchmark__barrow leader"><span class="cjm-benchmark__label">DNS</span><div class="cjm-benchmark__track"><i class="leader" style="width:61.6%"></i></div><b>61,6%</b></div>
+          </div>
+          <div class="cjm-benchmark__result"><strong>DNS</strong><span class="down">−3,2 п.п.</span><small>лидер этапа</small></div>
+        </div>
+
+        <div class="cjm-benchmark__row">
+          <div class="cjm-benchmark__num">2</div>
+          <div class="cjm-benchmark__stage"><b>Выбор решения</b><small>Какой подход лучше?</small></div>
+          <div class="cjm-benchmark__visual">
+            <div class="cjm-benchmark__barrow"><span class="cjm-benchmark__label">Фокус-бренд</span><div class="cjm-benchmark__track"><i class="brand" style="width:86.2%"></i></div><b>86,2%</b></div>
+            <div class="cjm-benchmark__barrow leader"><span class="cjm-benchmark__label">МТС</span><div class="cjm-benchmark__track"><i class="leader" style="width:91.1%"></i></div><b>91,1%</b></div>
+          </div>
+          <div class="cjm-benchmark__result"><strong>МТС</strong><span class="down">−4,9 п.п.</span><small>лидер этапа</small></div>
+        </div>
+
+        <div class="cjm-benchmark__row">
+          <div class="cjm-benchmark__num">3</div>
+          <div class="cjm-benchmark__stage"><b>Сравнение вариантов</b><small>Какой бренд выбрать?</small></div>
+          <div class="cjm-benchmark__visual">
+            <div class="cjm-benchmark__barrow"><span class="cjm-benchmark__label">Фокус-бренд</span><div class="cjm-benchmark__track"><i class="brand" style="width:76%"></i></div><b>76,0%</b></div>
+            <div class="cjm-benchmark__barrow leader"><span class="cjm-benchmark__label">Билайн</span><div class="cjm-benchmark__track"><i class="leader" style="width:85.3%"></i></div><b>85,3%</b></div>
+          </div>
+          <div class="cjm-benchmark__result"><strong>Билайн</strong><span class="down">−9,3 п.п.</span><small>лидер этапа</small></div>
+        </div>
+
+        <div class="cjm-benchmark__row">
+          <div class="cjm-benchmark__num">4</div>
+          <div class="cjm-benchmark__stage"><b>Покупка / действие</b><small>Где и как оформить?</small></div>
+          <div class="cjm-benchmark__visual">
+            <div class="cjm-benchmark__barrow"><span class="cjm-benchmark__label">Фокус-бренд</span><div class="cjm-benchmark__track"><i class="brand" style="width:86%"></i></div><b>86,0%</b></div>
+            <div class="cjm-benchmark__barrow leader"><span class="cjm-benchmark__label">МТС</span><div class="cjm-benchmark__track"><i class="leader" style="width:90%"></i></div><b>90,0%</b></div>
+          </div>
+          <div class="cjm-benchmark__result"><strong>МТС</strong><span class="down">−4,0 п.п.</span><small>лидер этапа</small></div>
+        </div>
+      </div>
+      <div class="chart-note"><b>Рекомендация:</b> для реальных исследований в колонке лидера показывать название бренда/сайта. Если фокус-бренд сам лидер — выводить «Лидер этапа» и положительный статус вместо отрицательного разрыва.</div>
+    </div>
+
+
+    <div class="cjm-mini-grid" style="margin-top:16px">
+      
+      <div class="card cjm-coverage-v2">
+        <div class="chart-title">Покрытие промптов по CJM</div>
+        <div class="chart-sub">Сразу видно объём каждого этапа и долю от общего корпуса · N = 1 500</div>
+
+        <div class="cjm-prompt-bars">
+          <div class="cjm-prompt-row">
+            <div class="cjm-prompt-row__stage"><span>01</span><b>Потребность</b></div>
+            <div class="cjm-prompt-row__track"><i style="width:17.4%"></i></div>
+            <div class="cjm-prompt-row__value"><b>75</b><span>5%</span></div>
+          </div>
+          <div class="cjm-prompt-row">
+            <div class="cjm-prompt-row__stage"><span>02</span><b>Исследование</b></div>
+            <div class="cjm-prompt-row__track"><i style="width:82.4%"></i></div>
+            <div class="cjm-prompt-row__value"><b>355</b><span>23,7%</span></div>
+          </div>
+          <div class="cjm-prompt-row is-max">
+            <div class="cjm-prompt-row__stage"><span>03</span><b>Решение</b></div>
+            <div class="cjm-prompt-row__track"><i style="width:100%"></i></div>
+            <div class="cjm-prompt-row__value"><b>431</b><span>28,7%</span></div>
+          </div>
+          <div class="cjm-prompt-row">
+            <div class="cjm-prompt-row__stage"><span>04</span><b>Сравнение</b></div>
+            <div class="cjm-prompt-row__track"><i style="width:36.7%"></i></div>
+            <div class="cjm-prompt-row__value"><b>158</b><span>10,5%</span></div>
+          </div>
+          <div class="cjm-prompt-row">
+            <div class="cjm-prompt-row__stage"><span>05</span><b>Действие</b></div>
+            <div class="cjm-prompt-row__track"><i style="width:51.0%"></i></div>
+            <div class="cjm-prompt-row__value"><b>220</b><span>14,7%</span></div>
+          </div>
+          <div class="cjm-prompt-row">
+            <div class="cjm-prompt-row__stage"><span>06</span><b>Опыт</b></div>
+            <div class="cjm-prompt-row__track"><i style="width:60.6%"></i></div>
+            <div class="cjm-prompt-row__value"><b>261</b><span>17,4%</span></div>
+          </div>
+        </div>
+
+        <div class="cjm-prompt-summary">
+          <span><b>Самый широкий этап</b> · Выбор решения</span>
+          <span><b>Самый узкий</b> · Потребность</span>
+        </div>
+      </div>
+      <div class="card cjm-matrix">
+        <div class="chart-title">CJM × AI-модель</div>
+        <div class="chart-sub">Видимость бренда, % · сравнение моделей на одинаковых этапах</div>
+        <div class="heatmap-table-wrap">
+          <table class="heatmap-table heatmap-table--compact">
+            <caption class="sr-only">Видимость бренда по этапам CJM и AI-моделям</caption>
+            <thead><tr><th scope="col">Этап CJM</th><th scope="col">ChatGPT</th><th scope="col">Gemini</th><th scope="col">DeepSeek</th><th scope="col">Alice AI</th><th scope="col">Perplexity</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Потребность</th><td class="hm-2">31%</td><td class="hm-3">48%</td><td class="hm-5">67%</td><td class="hm-4">52%</td><td class="hm-2">29%</td></tr>
+              <tr><th scope="row">Решение</th><td class="hm-4">58%</td><td class="hm-6">81%</td><td class="hm-6">86%</td><td class="hm-5">63%</td><td class="hm-4">55%</td></tr>
+              <tr><th scope="row">Сравнение</th><td class="hm-6">78%</td><td class="hm-5">62%</td><td class="hm-6">83%</td><td class="hm-4">59%</td><td class="hm-5">72%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="heatmap-scale" aria-label="Шкала интенсивности"><span>ниже</span><i class="hm-1"></i><i class="hm-2"></i><i class="hm-3"></i><i class="hm-4"></i><i class="hm-5"></i><i class="hm-6"></i><span>выше</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="data" class="section">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">05 · DATA VISUALIZATION</div><h2 class="h1">Графики и таблицы</h2><p class="lead">Фирменный синий всегда закреплён за фокус-брендом или ключевой серией. Остальные цвета — только для сравнения.</p></div></div>
+
+    <div class="two-col">
+      
+      <figure class="card chart-card">
+        <div class="chart-head"><div><div class="chart-title">Динамика видимости</div><div class="chart-sub">Март–август · доля ответов с упоминанием бренда, %</div></div></div>
+        <div class="visibility-chart">
+          <div class="visibility-chart__axis-title">Видимость, %</div>
+          <div class="visibility-chart__plot">
+            <div class="visibility-chart__y"><span>50</span><span>40</span><span>30</span><span>20</span><span>10</span><span>0</span></div>
+            <svg viewBox="0 0 640 250" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="vis-chart-title vis-chart-desc">
+              <title id="vis-chart-title">Динамика видимости фокус-бренда и медианы рынка</title>
+              <desc id="vis-chart-desc">Фокус-бренд растет с 12,5% в марте до 37,5% в августе. Медиана рынка меняется с 15% до 31,7%.</desc>
+              <g class="visibility-chart__grid">
+                <line x1="12" y1="5" x2="628" y2="5"/><line x1="12" y1="53" x2="628" y2="53"/><line x1="12" y1="101" x2="628" y2="101"/><line x1="12" y1="149" x2="628" y2="149"/><line x1="12" y1="197" x2="628" y2="197"/><line x1="12" y1="245" x2="628" y2="245"/>
+              </g>
+              <polyline class="visibility-chart__median" points="12,173 135,149 258,159 381,125 504,113 628,93"/>
+              <polyline class="visibility-chart__brand" points="12,185 135,167 258,139 381,133 504,95 628,65"/>
+              <g class="visibility-chart__dots"><circle cx="12" cy="185" r="5"/><circle cx="135" cy="167" r="5"/><circle cx="258" cy="139" r="5"/><circle cx="381" cy="133" r="5"/><circle cx="504" cy="95" r="5"/><circle cx="628" cy="65" r="5"/></g>
+            </svg>
+            <div class="visibility-chart__x"><span>Мар</span><span>Апр</span><span>Май</span><span>Июн</span><span>Июл</span><span>Авг</span></div>
+          </div>
+          <div class="visibility-chart__series" aria-label="Последние значения серий">
+            <span><i style="background:#1B3FAA"></i><b>Фокус-бренд</b><strong>37,5%</strong></span>
+            <span><i style="background:#C6CDD8"></i><b>Медиана рынка</b><strong>31,7%</strong></span>
+          </div>
+        </div>
+      </figure>
+      <div class="card chart-card">
+        <div class="chart-head"><div><div class="chart-title">Источники в AI-выдаче</div><div class="chart-sub">Доля ответов с цитированием, % · по убыванию</div></div></div>
+        <div class="hbar"><span class="hbar__label">drive2.ru</span><span class="hbar__track"><span class="hbar__fill" style="display:block;width:100%"></span></span><span class="hbar__value">10,6%</span></div>
+        <div class="hbar"><span class="hbar__label">auto.ru</span><span class="hbar__track"><span class="hbar__fill" style="display:block;width:98%"></span></span><span class="hbar__value">10,4%</span></div>
+        <div class="hbar"><span class="hbar__label">ozon.ru</span><span class="hbar__track"><span class="hbar__fill" style="display:block;width:86%"></span></span><span class="hbar__value">9,1%</span></div>
+        <div class="hbar"><span class="hbar__label">auto.mail.ru</span><span class="hbar__track"><span class="hbar__fill" style="display:block;width:56%"></span></span><span class="hbar__value">5,9%</span></div>
+        <div class="hbar"><span class="hbar__label">vseinstrumenti.ru</span><span class="hbar__track"><span class="hbar__fill" style="display:block;width:55%"></span></span><span class="hbar__value">5,8%</span></div>
+        <div class="chart-note">Для одиночного рейтинга используйте горизонтальные столбцы: они лучше читают длинные названия брендов и доменов.</div>
+      </div>
+    </div>
+
+    <p class="component-title" style="margin-top:42px">Leaderboard table</p>
+    <div class="table-wrap" tabindex="0" aria-label="Рейтинг брендов и сайтов">
+      <table class="table">
+        <caption>Рейтинг брендов и сайтов · пример аналитической таблицы</caption>
+        <thead><tr>
+          <th scope="col">Бренд / сайт</th>
+          <th scope="col">Видимость <span class="help" title="Доля ответов с упоминанием бренда">?</span></th>
+          <th scope="col"><abbr title="Доля голоса">SOV</abbr> <span class="help" title="Доля упоминаний бренда среди всех брендовых упоминаний">?</span></th>
+          <th scope="col">AISOV <span class="help" title="Сводный индекс AI-видимости">?</span></th>
+          <th scope="col">Позиция <span class="help" title="Среднее место бренда в ответе; меньше — выше">?</span></th>
+          <th scope="col">Тональность</th>
+          <th scope="col">Цитирование</th>
+        </tr></thead>
+        <tbody>
+          <tr><th scope="row"><span class="rank">1</span>Bosch <span class="caption">бренд</span></th><td>13,3%</td><td>7,6%</td><td>1,04%</td><td>3,0</td><td class="cell-pos">+73,6 п.п.</td><td>0,0%</td></tr>
+          <tr><th scope="row"><span class="rank">2</span>TRW <span class="caption">бренд</span></th><td>12,3%</td><td>7,0%</td><td>1,31%</td><td>2,2</td><td class="cell-pos">+68,2 п.п.</td><td>0,0%</td></tr>
+          <tr><th scope="row"><span class="rank">3</span>Brembo <span class="caption">бренд</span></th><td>6,8%</td><td>3,9%</td><td>0,65%</td><td>2,6</td><td class="cell-pos">+73,3 п.п.</td><td>0,1%</td></tr>
+          <tr class="table__row--source"><th scope="row">drive2.ru <span class="caption">сайт</span></th><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>9,5%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="chart-note"><b>Правило:</b> сравниваемые числовые метрики выравниваются вправо; сущность — влево. Для сайта недоступные брендовые метрики показываются как «—», а не как 0.</div>
+
+    <p class="component-title" style="margin-top:42px">Heatmap / platform × brand</p>
+    <div class="card card__pad heatmap-card">
+      <div class="chart-head"><div><div class="chart-title">Видимость по AI-моделям</div><div class="chart-sub">Видимость бренда, % · бренд × AI-модель</div></div></div>
+      <div class="heatmap-table-wrap" tabindex="0">
+        <table class="heatmap-table">
+          <caption class="sr-only">Видимость брендов по AI-моделям</caption>
+          <thead><tr><th scope="col">Бренд</th><th scope="col">ChatGPT</th><th scope="col">Gemini</th><th scope="col">DeepSeek</th><th scope="col">GigaChat</th><th scope="col">Alice AI</th><th scope="col">Perplexity</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Фокус-бренд</th><td class="hm-5">12,6%</td><td class="hm-4">9,8%</td><td class="hm-6">16,1%</td><td class="hm-3">7,2%</td><td class="hm-4">10,1%</td><td class="hm-2">5,4%</td></tr>
+            <tr><th scope="row">Конкурент A</th><td class="hm-3">6,8%</td><td class="hm-5">12,9%</td><td class="hm-4">9,2%</td><td class="hm-2">4,8%</td><td class="hm-2">5,1%</td><td class="hm-3">7,4%</td></tr>
+            <tr><th scope="row">Конкурент B</th><td class="hm-1">2,9%</td><td class="hm-3">7,1%</td><td class="hm-2">5,0%</td><td class="hm-4">10,2%</td><td class="hm-3">8,6%</td><td class="hm-1">2,2%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="heatmap-scale" aria-label="Шкала интенсивности"><span>ниже</span><i class="hm-1"></i><i class="hm-2"></i><i class="hm-3"></i><i class="hm-4"></i><i class="hm-5"></i><i class="hm-6"></i><span>выше</span></div>
+      <div class="chart-note">Цвет кодирует относительную интенсивность внутри одной метрики. Точное значение всегда остаётся в ячейке.</div>
+    </div>
+  
+
+    <p class="component-title" style="margin-top:42px">Data states</p>
+    <div class="data-state-grid">
+      <div class="card data-state"><span class="a-icon a-icon--activity a-icon--brand"></span><div><b>Загрузка данных</b><small>Показываем, что именно обновляется: «Загружаем ответы AI…».</small></div></div>
+      <div class="card data-state"><span class="a-icon a-icon--info a-icon--muted"></span><div><b>Нет данных в срезе</b><small>«В выбранном срезе нет ответов. Измените фильтры.»</small></div></div>
+      <div class="card data-state"><span class="a-icon a-icon--triangle-alert a-icon--warning"></span><div><b>Недостаточно данных</b><small>«N слишком мал для устойчивого сравнения. Показываем как индикативный сигнал.»</small></div></div>
+    </div>
+</div>
+</section>
+
+<section id="narrative" class="section section--white">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">06 · NARRATIVE COMPONENTS</div><h2 class="h1">Инсайты, выводы и доказательства</h2></div></div>
+    <div class="two-col">
+      <div class="example-stack">
+        <div class="insight"><div class="insight__icon">i</div><div><h3>Ключевой вывод</h3><p>Фокус-бренд виден чаще медианы рынка, но уступает в прямых рекомендациях. Вывод отделён от графика и читается как самостоятельный тезис.</p></div></div>
+        <div class="insight insight--warning"><div class="insight__icon">!</div><div><h3>Ограничение данных</h3><p>Срез по отдельному региону индикативный из-за малого числа формулировок. Использовать как направление проверки, а не как рейтинг.</p></div></div>
+        <div class="quote">«Охват и сила рекомендации — разные сигналы».<small>Редакционный тезис / strong takeaway</small></div>
+      </div>
+      <div class="card card__pad-lg">
+        <div class="chapter">06 · Аналитика</div>
+        <h2 class="h2" style="margin-top:16px">Секционный маркер</h2>
+        <p class="lead">Компактная нумерация разделов и длинная горизонтальная линия помогают ориентироваться в лонгриде, не превращая страницу в презентацию.</p>
+        <div class="rule"></div>
+        <div class="tags"><span class="tag">01 / 11</span><span class="tag tag--brand">Активный раздел</span><span class="tag">Методология</span></div>
+      </div>
+    </div>
+
+    <p class="component-title" style="margin-top:42px">Recommendation / backlog cards</p>
+    <div class="action-grid">
+      <article class="action card"><div class="action__meta">Пробел видимости</div><h3>Закрыть сценарии с низкой представленностью бренда</h3><p>Карточка переводит наблюдение из данных в конкретное действие.</p><div class="action__foot"><span>Москва</span><strong>189 упоминаний</strong></div></article>
+      <article class="action card"><div class="action__meta">Источник</div><h3>Усилить присутствие на цитируемых площадках</h3><p>Показывайте домен, объём цитирований и краткую причину приоритета.</p><div class="action__foot"><span>Источник</span><strong>1 532 цитаты</strong></div></article>
+      <article class="action card"><div class="action__meta">Рост конкурента</div><h3>Отследить сильный региональный сигнал конкурента</h3><p>Подходит для рисков, возможностей и точек роста.</p><div class="action__foot"><span>Краснодар</span><strong>29,1%</strong></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="patterns" class="section">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">07 · EXTRA PATTERNS</div><h2 class="h1">Дополнительные элементы</h2><p class="lead">Элементы, которых может не быть в текущем исследовании, но они полезны для будущих data-story.</p></div></div>
+
+    <div class="two-col">
+      <div class="card card__pad-lg">
+        <p class="component-title">AI answer accordion</p>
+        <div class="accordion">
+          <details open><summary>Какой бренд выбрать для конкретного сценария?</summary><div class="accordion__body">Полный ответ AI можно показывать внутри раскрывающейся строки. <span class="answer-highlight">Упоминания брендов</span> подсвечиваются, а ниже выводятся источники.</div></details>
+          <details><summary>Какие источники использовала модель?</summary><div class="accordion__body">Список URL / доменов, дата съёма и канал.</div></details>
+          <details><summary>Почему рекомендация отличается по моделям?</summary><div class="accordion__body">Контекст для качественного разбора ответа.</div></details>
+        </div>
+      </div>
+      <div class="card card__pad-lg">
+        <p class="component-title">Source share list</p>
+        <div class="source-list">
+          <div class="source-row"><span class="source-row__domain">cian.ru</span><span class="source-row__bar"><i style="width:100%"></i></span><span class="source-row__value">18,4%</span></div>
+          <div class="source-row"><span class="source-row__domain">realty.yandex.ru</span><span class="source-row__bar"><i style="width:83%"></i></span><span class="source-row__value">15,3%</span></div>
+          <div class="source-row"><span class="source-row__domain">avito.ru</span><span class="source-row__bar"><i style="width:70%"></i></span><span class="source-row__value">12,9%</span></div>
+          <div class="source-row"><span class="source-row__domain">brand.ru</span><span class="source-row__bar"><i style="width:21%"></i></span><span class="source-row__value">3,8%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="component-title" style="margin-top:42px">Before / after or two-signal comparison</p>
+    <div class="compare">
+      <div class="compare-card card risk"><div class="compare-card__bar"></div><span class="tag tag--danger">Риск</span><h3 class="h3" style="margin-top:14px">Высокая видимость, слабая рекомендация</h3><p class="small">Бренд часто попадает в ответы, но редко становится финальным советом.</p></div>
+      <div class="compare-card card good"><div class="compare-card__bar"></div><span class="tag tag--success">Сильный сигнал</span><h3 class="h3" style="margin-top:14px">Умеренная видимость, сильная рекомендация</h3><p class="small">Полезно для сравнения двух независимых метрик без попытки свести их в один балл.</p></div>
+    </div>
+
+    <div class="dark-panel" style="margin-top:42px">
+      <div class="eyebrow" style="color:#AFC1FF">DARK ACCENT MODE</div>
+      <h2 class="h2" style="margin-top:10px">Тёмный режим — только для крупных акцентов</h2>
+      <p class="lead">Обложка, разделитель главы, keynote-цифра, цитата или CTA. Для длинных таблиц и большинства аналитики сохраняйте светлый фон.</p>
+      <div class="tags" style="margin-top:20px"><span class="tag" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.14);color:#fff">#0B1020</span><span class="tag" style="background:rgba(49,95,219,.18);border-color:rgba(142,166,238,.35);color:#DDE6FF">Brand glow</span></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="responsive" class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <div class="eyebrow">08 · RESPONSIVE RESEARCH</div>
+        <h2 class="h1">Исследование как адаптивная веб-страница</h2>
+        <p class="lead">Один HTML-документ должен оставаться полноценным и на десктопе, и на смартфоне. На мобильном меняется компоновка и приоритет контента, но не набор данных и не смысл исследования.</p>
+      </div>
+      <span class="tag tag--brand">Mobile-first</span>
+    </div>
+
+    <div class="responsive-rules">
+      <div class="card responsive-rule"><span class="responsive-rule__value">≤ 767</span><div><b>Смартфон</b><small>1 колонка, без горизонтального скролла страницы, таблицы превращаются в карточки, декоративный hero-art скрывается.</small></div></div>
+      <div class="card responsive-rule"><span class="responsive-rule__value">768–1023</span><div><b>Планшет</b><small>1–2 колонки, упрощённые схемы, основные KPI остаются рядом.</small></div></div>
+      <div class="card responsive-rule"><span class="responsive-rule__value">≥ 1024</span><div><b>Десктоп</b><small>Полная аналитическая плотность: многоколоночные схемы, таблицы и сравнительные графики.</small></div></div>
+    </div>
+
+    <div class="responsive-showcase">
+      <div class="card responsive-device responsive-device--desktop">
+        <div class="responsive-device__head">
+          <div><b>Desktop</b><small>1280+ px</small></div>
+          <span class="tag">полный data-view</span>
+        </div>
+        <div class="desktop-mock">
+          <div class="desktop-mock__top"><span></span><span></span><span></span></div>
+          <div class="desktop-mock__hero">
+            <div><i></i><i></i><i></i></div>
+            <div class="desktop-mock__art"></div>
+          </div>
+          <div class="desktop-mock__kpis"><span></span><span></span><span></span><span></span></div>
+          <div class="desktop-mock__content"><div class="desktop-mock__chart"></div><div class="desktop-mock__table"></div></div>
+        </div>
+      </div>
+
+      <div class="card responsive-device responsive-device--mobile">
+        <div class="responsive-device__head">
+          <div><b>Mobile</b><small>375–430 px</small></div>
+          <span class="tag tag--brand">content-first</span>
+        </div>
+        <div class="phone-shell">
+          <div class="phone-shell__screen">
+            <div class="phone-mock__top"><span></span><b>Голос бренда</b><i></i></div>
+            <div class="phone-mock__hero"><small>GEO-исследование</small><b>Как AI влияет на выбор</b><span></span><span></span></div>
+            <div class="phone-mock__kpis"><i></i><i></i></div>
+            <div class="phone-mock__chart"></div>
+            <div class="mobile-handoff mobile-handoff--demo">
+              <button class="mobile-handoff__close" type="button" aria-label="Закрыть демонстрацию" tabindex="-1">×</button>
+              <div class="mobile-handoff__title">Сохраните исследование</div>
+              <div class="mobile-handoff__text">Скопируйте ссылку, чтобы сохранить исследование и открыть его позже.</div>
+              <div class="mobile-handoff__actions">
+                <button class="btn btn--primary" type="button" tabindex="-1">Копировать ссылку</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="responsive-device__note">Плашка не блокирует страницу и занимает около 140–160 px по высоте вместо половины экрана.</p>
+      </div>
+    </div>
+
+    <div class="card responsive-contract">
+      <div class="responsive-contract__head">
+        <div><h3>Контракт мобильного поведения</h3><p>Эти правила относятся к каждой публичной странице исследования.</p></div>
+        <span class="a-icon a-icon--globe a-icon--brand a-icon--lg" aria-hidden="true"></span>
+      </div>
+      <div class="responsive-contract__grid">
+        <div><b>Контент</b><span>Сначала вывод, KPI и основной график. Вторичные детали уходят ниже, а не исчезают.</span></div>
+        <div><b>Таблицы</b><span>На смартфоне строки становятся карточками «метрика → значение». Горизонтальный скролл не нужен.</span></div>
+        <div><b>Схемы</b><span>Многоколоночные CJM-блоки перестраиваются вертикально; последовательность сохраняется.</span></div>
+        <div><b>Touch</b><span>Интерактивные зоны — минимум 44×44 px; действия не зависят от hover.</span></div>
+        <div><b>Safe area</b><span>Фиксированная плашка учитывает нижний системный жест и не перекрывает контент.</span></div>
+        <div><b>Ссылка</b><span>Одна кнопка копирует canonical URL; после нажатия показывается подтверждение.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="icons" class="section section--white">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <div class="eyebrow">09 · ICON SYSTEM</div>
+        <h2 class="h1">Иконки для исследований</h2>
+        <p class="lead">Как в UI-kit impulse.guru: generic-иконки работают через CSS mask-image и наследуют currentColor. Логотипы AI-моделей лежат отдельными SVG, чтобы сохранять фирменный вид платформ.</p>
+      </div>
+      <span class="tag">39 generic + 8 AI</span>
+    </div>
+
+    <div class="two-col" style="margin-bottom:28px">
+      <div class="card card__pad-lg">
+        <p class="component-title">Использование</p>
+        <div class="tags">
+          <span class="a-icon a-icon--route a-icon--brand"></span>
+          <span class="a-icon a-icon--chart-line a-icon--brand a-icon--lg"></span>
+          <span class="a-icon a-icon--triangle-alert a-icon--warning"></span>
+          <span class="a-icon a-icon--circle-check a-icon--success"></span>
+        </div>
+        <div class="code-note">&lt;span class="a-icon a-icon--route a-icon--brand"&gt;&lt;/span&gt;</div>
+        <p class="small">Размеры: sm 16 · md 24 · lg 32 · xl 48. Цвет меняется через currentColor или модификатор.</p>
+      </div>
+      <div class="card card__pad-lg">
+        <p class="component-title">Рекомендованные группы</p>
+        <div class="tags"><span class="tag tag--brand">CJM / route</span><span class="tag">data / charts</span><span class="tag">AI / bot</span><span class="tag">sources</span><span class="tag">actions</span><span class="tag">states</span></div>
+        <p class="small" style="margin-top:12px">Для этапов CJM лучше использовать один outline-стиль, а не смешивать эмодзи, залитые pictograms и логотипы AI.</p>
+      </div>
+    </div>
+
+    <p class="component-title">Generic icons · клик копирует HTML</p>
+    <div class="icon-grid"><button class="icon-item" data-copy='<span class="a-icon a-icon--activity"></span>'><span class="a-icon a-icon--activity a-icon--lg"></span><span>activity</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--search"></span>'><span class="a-icon a-icon--search a-icon--lg"></span><span>search</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--bot"></span>'><span class="a-icon a-icon--bot a-icon--lg"></span><span>bot</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--network"></span>'><span class="a-icon a-icon--network a-icon--lg"></span><span>network</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--database"></span>'><span class="a-icon a-icon--database a-icon--lg"></span><span>database</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--file-text"></span>'><span class="a-icon a-icon--file-text a-icon--lg"></span><span>file-text</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--download"></span>'><span class="a-icon a-icon--download a-icon--lg"></span><span>download</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--lightbulb"></span>'><span class="a-icon a-icon--lightbulb a-icon--lg"></span><span>lightbulb</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--scan-search"></span>'><span class="a-icon a-icon--scan-search a-icon--lg"></span><span>scan-search</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--scale"></span>'><span class="a-icon a-icon--scale a-icon--lg"></span><span>scale</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--git-compare"></span>'><span class="a-icon a-icon--git-compare a-icon--lg"></span><span>git-compare</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--shopping-cart"></span>'><span class="a-icon a-icon--shopping-cart a-icon--lg"></span><span>shopping-cart</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--wrench"></span>'><span class="a-icon a-icon--wrench a-icon--lg"></span><span>wrench</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--target"></span>'><span class="a-icon a-icon--target a-icon--lg"></span><span>target</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--eye"></span>'><span class="a-icon a-icon--eye a-icon--lg"></span><span>eye</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--message-circle"></span>'><span class="a-icon a-icon--message-circle a-icon--lg"></span><span>message-circle</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--trending-up"></span>'><span class="a-icon a-icon--trending-up a-icon--lg"></span><span>trending-up</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--globe"></span>'><span class="a-icon a-icon--globe a-icon--lg"></span><span>globe</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--map"></span>'><span class="a-icon a-icon--map a-icon--lg"></span><span>map</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--route"></span>'><span class="a-icon a-icon--route a-icon--lg"></span><span>route</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--circle-check"></span>'><span class="a-icon a-icon--circle-check a-icon--lg"></span><span>circle-check</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--triangle-alert"></span>'><span class="a-icon a-icon--triangle-alert a-icon--lg"></span><span>triangle-alert</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--layers"></span>'><span class="a-icon a-icon--layers a-icon--lg"></span><span>layers</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--sparkles"></span>'><span class="a-icon a-icon--sparkles a-icon--lg"></span><span>sparkles</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--brain"></span>'><span class="a-icon a-icon--brain a-icon--lg"></span><span>brain</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--users"></span>'><span class="a-icon a-icon--users a-icon--lg"></span><span>users</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--list-filter"></span>'><span class="a-icon a-icon--list-filter a-icon--lg"></span><span>list-filter</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--table"></span>'><span class="a-icon a-icon--table a-icon--lg"></span><span>table</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--chart-column"></span>'><span class="a-icon a-icon--chart-column a-icon--lg"></span><span>chart-column</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--chart-line"></span>'><span class="a-icon a-icon--chart-line a-icon--lg"></span><span>chart-line</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--quote"></span>'><span class="a-icon a-icon--quote a-icon--lg"></span><span>quote</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--book-open"></span>'><span class="a-icon a-icon--book-open a-icon--lg"></span><span>book-open</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--link"></span>'><span class="a-icon a-icon--link a-icon--lg"></span><span>link</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--external-link"></span>'><span class="a-icon a-icon--external-link a-icon--lg"></span><span>external-link</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--filter"></span>'><span class="a-icon a-icon--filter a-icon--lg"></span><span>filter</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--info"></span>'><span class="a-icon a-icon--info a-icon--lg"></span><span>info</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--circle-help"></span>'><span class="a-icon a-icon--circle-help a-icon--lg"></span><span>circle-help</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--arrow-right"></span>'><span class="a-icon a-icon--arrow-right a-icon--lg"></span><span>arrow-right</span></button>
+<button class="icon-item" data-copy='<span class="a-icon a-icon--workflow"></span>'><span class="a-icon a-icon--workflow a-icon--lg"></span><span>workflow</span></button></div>
+
+    <p class="component-title" style="margin-top:38px">AI platform icons · клик копирует путь</p>
+    <div class="ai-icon-grid"><button class="ai-icon-item" data-copy='assets/ai/chatgpt.svg'><img src="assets/ai/chatgpt.svg" alt=""><div>ChatGPT<small>chatgpt.svg</small></div></button>
+<button class="ai-icon-item" data-copy='assets/ai/deepseek.svg'><img src="assets/ai/deepseek.svg" alt=""><div>DeepSeek<small>deepseek.svg</small></div></button>
+<button class="ai-icon-item" data-copy='assets/ai/gemini.svg'><img src="assets/ai/gemini.svg" alt=""><div>Gemini<small>gemini.svg</small></div></button>
+<button class="ai-icon-item" data-copy='assets/ai/gigachat.svg'><img src="assets/ai/gigachat.svg" alt=""><div>GigaChat<small>gigachat.svg</small></div></button>
+<button class="ai-icon-item" data-copy='assets/ai/perplexity.svg'><img src="assets/ai/perplexity.svg" alt=""><div>Perplexity<small>perplexity.svg</small></div></button>
+<button class="ai-icon-item" data-copy='assets/ai/yandexgpt.svg'><img src="assets/ai/yandexgpt.svg" alt=""><div>Алиса AI / YandexGPT<small>yandexgpt.svg</small></div></button>
+<button class="ai-icon-item" data-copy='assets/ai/google-ai-overview.svg'><img src="assets/ai/google-ai-overview.svg" alt=""><div>Google AI Overview<small>google-ai-overview.svg</small></div></button>
+<button class="ai-icon-item" data-copy='assets/ai/alice-search.svg'><img src="assets/ai/alice-search.svg" alt=""><div>Alice AI на поиске<small>alice-search.svg</small></div></button></div>
+  </div>
+</section>
+
+</main>
+
+
+<aside class="mobile-handoff" id="mobileResearchHandoff" hidden aria-labelledby="mobileResearchHandoffTitle">
+  <button class="mobile-handoff__close" id="mobileResearchHandoffClose" type="button" aria-label="Закрыть">×</button>
+  <div class="mobile-handoff__title" id="mobileResearchHandoffTitle">Сохраните исследование</div>
+  <div class="mobile-handoff__text">Скопируйте ссылку, чтобы сохранить исследование и открыть его позже.</div>
+  <div class="mobile-handoff__actions">
+    <button class="btn btn--primary" id="copyResearchLink" type="button">Копировать ссылку</button>
+  </div>
+  <span class="sr-only" id="mobileResearchHandoffStatus" role="status" aria-live="polite"></span>
+</aside>
+
+<footer class="footer"><div class="wrap footer__row"><span>Голос бренда · Research UI Kit v2.3.3 · CJM-first</span><span>Inter / 8px grid / 12 columns / responsive</span></div></footer>
+
+<script>
+document.querySelectorAll('.segmented button').forEach(btn=>btn.addEventListener('click',()=>{
+  btn.parentElement.querySelectorAll('button').forEach(b=>b.classList.remove('is-active'));
+  btn.classList.add('is-active');
+}));
+document.querySelectorAll('.chip').forEach(btn=>btn.addEventListener('click',()=>btn.classList.toggle('is-active')));
+
+const toast=document.createElement('div');
+toast.className='copy-toast';
+toast.textContent='Скопировано';
+document.body.appendChild(toast);
+let toastTimer;
+document.querySelectorAll('[data-copy]').forEach(el=>el.addEventListener('click',async()=>{
+  const value=el.getAttribute('data-copy');
+  try{ await navigator.clipboard.writeText(value); }
+  catch(e){
+    const t=document.createElement('textarea');t.value=value;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();
+  }
+  toast.classList.add('is-visible');
+  clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('is-visible'),1100);
+}));
+</script>
+<script src="research-runtime.js"></script>
+</body>
+</html>

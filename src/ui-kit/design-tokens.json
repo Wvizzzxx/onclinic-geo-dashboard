@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "name": "Голос бренда / AISOV Research UI Kit",
+    "version": "2.3.2",
+    "purpose": "Web research pages, analytical reports, dashboards and CJM-first GEO/AI data stories"
+  },
+  "color": {
+    "brand": {
+      "950": "#0B173F",
+      "900": "#10245F",
+      "800": "#163182",
+      "700": "#1B3FAA",
+      "600": "#2450C6",
+      "500": "#315FDB",
+      "400": "#5D7FE5",
+      "300": "#8EA6EE",
+      "200": "#C3D0F7",
+      "100": "#E8EEFF",
+      "50": "#F4F7FF"
+    },
+    "neutral": {
+      "950": "#0B1020",
+      "900": "#111827",
+      "800": "#1F2937",
+      "700": "#344054",
+      "600": "#475467",
+      "500": "#667085",
+      "400": "#98A2B3",
+      "300": "#D0D5DD",
+      "200": "#E4E7EC",
+      "100": "#F2F4F7",
+      "50": "#F8FAFC",
+      "0": "#FFFFFF"
+    },
+    "semantic": {
+      "success": "#16A34A",
+      "warning": "#D97706",
+      "danger": "#DC2626",
+      "info": "#2563EB"
+    },
+    "chart": [
+      "#1B3FAA",
+      "#0F9D9A",
+      "#7C3AED",
+      "#E58A14",
+      "#D64545",
+      "#2E8B57",
+      "#D64D9E",
+      "#64748B"
+    ]
+  },
+  "typography": {
+    "family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "minVisiblePx": 12,
+    "mobileBodyMinPx": 16,
+    "mobileInputMinPx": 16,
+    "referenceScalePx": [12, 14, 16, 18, 22, 32, 44, 56],
+    "display": "56/60 700",
+    "h1": "44/50 700",
+    "h2": "32/38 700",
+    "h3": "22/28 650",
+    "bodyLg": "18/28 400",
+    "body": "16/24 400",
+    "small": "14/20 400",
+    "caption": "12/16 500"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    32,
+    40,
+    48,
+    64,
+    80,
+    96
+  ],
+  "radius": {
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "pill": 999
+  },
+  "layout": {
+    "content": 760,
+    "container": 1280,
+    "wide": 1440,
+    "grid": 12,
+    "gutter": 24
+  },
+  "icons": {
+    "system": "CSS mask-image, currentColor",
+    "sizes": {
+      "sm": 16,
+      "md": 24,
+      "lg": 32,
+      "xl": 48
+    },
+    "generic_count": 39,
+    "ai_platform_icons": [
+      "ChatGPT",
+      "DeepSeek",
+      "Gemini",
+      "GigaChat",
+      "Perplexity",
+      "Алиса AI / YandexGPT",
+      "Google AI Overview",
+      "Алиса на поиске"
+    ]
+  },
+  "cjm": {
+    "recommended_stages": "3–7, category-specific",
+    "required_layers": [
+      "user_goal",
+      "question_or_intent",
+      "criteria_or_barrier",
+      "ai_role",
+      "measured_signal",
+      "opportunity"
+    ],
+    "optional_evidence_layers": [
+      "thoughts",
+      "emotions",
+      "user_quotes"
+    ]
+  },
+  "responsive": {
+    "breakpoints": {
+      "small_phone_max": 390,
+      "phone_max": 767,
+      "tablet_max": 1023,
+      "desktop_min": 1024,
+      "wide_min": 1440
+    },
+    "principles": [
+      "mobile-first",
+      "no page-level horizontal scroll",
+      "content priority over desktop composition",
+      "44px minimum mobile touch target",
+      "safe-area aware fixed UI"
+    ],
+    "mobile_handoff": {
+      "auto_show_max_width": 767,
+      "mode": "non-modal floating card",
+      "estimated_height_px": "130-160",
+      "dismissal": "sessionStorage per pathname",
+      "primary_action": "copy canonical URL",
+      "fallback_action": "copy current URL when canonical is absent; show browser address instruction when clipboard copy fails"
+    }
+  }
+}

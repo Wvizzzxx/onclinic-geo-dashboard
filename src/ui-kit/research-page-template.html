@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Название исследования — Голос бренда</title>
+<link rel="stylesheet" href="ui-kit.css">
+<link rel="stylesheet" href="aisov-icons.css">
+</head>
+<body data-mobile-handoff="true">
+<header class="masthead">
+  <div class="wrap masthead__row">
+    <a class="brand" href="#"><img src="logo-mark.png" alt=""><span>Голос бренда</span></a>
+    <nav class="nav" aria-label="Разделы исследования">
+      <a class="is-active" href="#overview">Обзор</a>
+      <a href="#cjm">CJM</a>
+      <a href="#data">Данные</a>
+      <a href="#sources">Источники</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="research-hero" id="overview">
+    <div class="wrap">
+      <div class="research-hero__inner">
+        <div>
+          <div class="eyebrow">GEO-исследование · Категория</div>
+          <h1>Название исследования</h1>
+          <p>Коротко объясните вопрос исследования и что пользователь узнает из данных.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" style="background:#fff;color:#163182" href="#">Скачать PDF</a>
+            <a class="btn btn--secondary" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.25)" href="#data">Перейти к данным</a>
+          </div>
+        </div>
+        <div class="hero-art"><img class="hero-mark" src="logo-mark.png" alt=""></div>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>1 500</strong><span>запросов</span></div>
+        <div class="hero-stat"><strong>8</strong><span>AI-каналов</span></div>
+        <div class="hero-stat"><strong>24</strong><span>бренда</span></div>
+        <div class="hero-stat"><strong>6</strong><span>этапов CJM</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white" id="data">
+    <div class="wrap">
+      <div class="section__head">
+        <div><div class="eyebrow">Результаты</div><h2 class="h1">Ключевые показатели</h2></div>
+      </div>
+      <div class="metric-grid">
+        <div class="metric card"><div class="metric__label">Видимость</div><div class="metric__value">34,2%</div><div class="metric__foot">от всех ответов</div></div>
+        <div class="metric card"><div class="metric__label">Доля голоса</div><div class="metric__value">18,6%</div><div class="metric__foot">в конкурентном срезе</div></div>
+        <div class="metric card"><div class="metric__label">Позиция</div><div class="metric__value">2,3</div><div class="metric__foot">меньше — выше</div></div>
+        <div class="metric card metric--brand"><div class="metric__label">AISOV</div><div class="metric__value">8,7%</div><div class="metric__foot">сводный показатель</div></div>
+      </div>
+
+      <div class="two-col" style="margin-top:20px">
+        <div class="card chart-card">
+          <div class="chart-title">Пример графика</div>
+          <div class="chart-sub">На мобильном остаётся в ширине экрана</div>
+          <div class="visibility-chart" style="margin-top:18px">
+            <div class="visibility-chart__axis-title">Видимость, %</div>
+            <div class="visibility-chart__plot">
+              <div class="visibility-chart__y"><span>50%</span><span>40%</span><span>30%</span><span>20%</span><span>10%</span><span>0%</span></div>
+              <svg viewBox="0 0 640 250" preserveAspectRatio="none" aria-label="Пример динамики">
+                <g class="visibility-chart__grid"><line x1="10" y1="10" x2="630" y2="10"/><line x1="10" y1="58" x2="630" y2="58"/><line x1="10" y1="106" x2="630" y2="106"/><line x1="10" y1="154" x2="630" y2="154"/><line x1="10" y1="202" x2="630" y2="202"/><line x1="10" y1="250" x2="630" y2="250"/></g>
+                <polyline class="visibility-chart__median" points="10,178 134,154 258,166 382,130 506,118 630,98"/>
+                <polyline class="visibility-chart__brand" points="10,190 134,172 258,145 382,137 506,102 630,70"/>
+                <g class="visibility-chart__dots"><circle cx="10" cy="190" r="5"/><circle cx="134" cy="172" r="5"/><circle cx="258" cy="145" r="5"/><circle cx="382" cy="137" r="5"/><circle cx="506" cy="102" r="5"/><circle cx="630" cy="70" r="5"/></g>
+              </svg>
+              <div class="visibility-chart__x"><span>Мар</span><span>Апр</span><span>Май</span><span>Июн</span><span>Июл</span><span>Авг</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card chart-card">
+          <div class="chart-title">Рейтинг источников</div>
+          <div class="chart-sub">Горизонтальные бары адаптируются без скролла</div>
+          <div class="hbar" style="margin-top:18px"><span class="hbar__label">example.ru</span><span class="hbar__track"><span class="hbar__fill" style="display:block;width:100%"></span></span><span class="hbar__value">10,6%</span></div>
+          <div class="hbar"><span class="hbar__label">site.ru</span><span class="hbar__track"><span class="hbar__fill" style="display:block;width:82%"></span></span><span class="hbar__value">8,7%</span></div>
+          <div class="hbar"><span class="hbar__label">media.ru</span><span class="hbar__track"><span class="hbar__fill" style="display:block;width:60%"></span></span><span class="hbar__value">6,4%</span></div>
+        </div>
+      </div>
+
+      <div class="table-wrap" style="margin-top:20px">
+        <table class="table">
+          <caption>Пример адаптивной таблицы</caption>
+          <thead><tr><th scope="col">Бренд</th><th scope="col">Видимость</th><th scope="col">SOV</th><th scope="col">Позиция</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Бренд A</th><td>34,2%</td><td>18,6%</td><td>2,3</td></tr>
+            <tr><th scope="row">Бренд B</th><td>31,8%</td><td>16,2%</td><td>2,7</td></tr>
+            <tr><th scope="row">Бренд C</th><td>25,1%</td><td>13,0%</td><td>3,1</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<aside class="mobile-handoff" id="mobileResearchHandoff" hidden aria-labelledby="mobileResearchHandoffTitle">
+  <button class="mobile-handoff__close" id="mobileResearchHandoffClose" type="button" aria-label="Закрыть">×</button>
+  <div class="mobile-handoff__title" id="mobileResearchHandoffTitle">Сохраните исследование</div>
+  <div class="mobile-handoff__text">Скопируйте ссылку, чтобы сохранить исследование и открыть его позже.</div>
+  <div class="mobile-handoff__actions">
+    <button class="btn btn--primary" id="copyResearchLink" type="button">Копировать ссылку</button>
+  </div>
+  <span class="sr-only" id="mobileResearchHandoffStatus" role="status" aria-live="polite"></span>
+</aside>
+
+<script src="research-runtime.js"></script>
+</body>
+</html>

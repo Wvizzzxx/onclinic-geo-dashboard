@@ -1,0 +1,147 @@
+<title>ОН КЛИНИК в AI-ответах</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/*__UIKIT__*/
+/*__ICONS__*/
+/*__DASH__*/
+</style>
+
+<header class="masthead">
+  <div class="wrap masthead__row">
+    <a class="brand" href="#overview"><img src="__LOGO__" alt=""><span>Голос бренда</span></a>
+    <nav class="nav" aria-label="Разделы дашборда">
+      <a href="#overview" class="is-active">Обзор</a>
+      <a href="#competitors">Конкуренты</a>
+      <a href="#channels">Каналы</a>
+      <a href="#sources">Лидеры цитирования</a>
+      <a href="#gaps">Упущенные запросы</a>
+      <a href="#metrika">Переходы</a>
+      <a href="#method">Методика</a>
+    </nav>
+    <span class="tag tag--brand" id="measureTag">Замер</span>
+  </div>
+</header>
+
+<main>
+<section class="research-hero" id="top">
+  <div class="wrap">
+    <div class="research-hero__inner">
+      <div>
+        <div class="eyebrow" id="heroEyebrow">GEO-мониторинг · onclinic.ru</div>
+        <h1>Как AI называет и цитирует ОН КЛИНИК</h1>
+        <p>Два сигнала по каждому направлению и FAQ: называет ли AI клинику в тексте ответа и ссылается ли на её сайт в источниках. Сравнение с конкурентами направления и сайты, которые AI цитирует чаще всего.</p>
+        <div class="hero-actions"><a class="btn btn--primary hero-btn" href="#overview">Открыть срез</a><a class="btn btn--secondary hero-btn hero-btn--ghost" href="#method">Как считали</a></div>
+      </div>
+      <figure class="hero-visual"><img src="__HERO__" width="1100" height="826" alt="ОН КЛИНИК: поиск клиники, запись на приём и популярные направления" decoding="async"></figure>
+    </div>
+    <div class="hero-stats" id="heroStats"></div>
+  </div>
+</section>
+
+<div class="slicebar" id="slicebar">
+  <div class="wrap">
+    <div class="slicebar__row">
+      <div class="slicebar__group"><span class="slicebar__label">Направление</span><div class="dirtabs" id="dirTabs" role="tablist" aria-label="Направление"></div></div>
+      <div class="slicebar__group"><span class="slicebar__label">Канал</span><div class="segmented" id="typeSeg" role="tablist" aria-label="Тип канала"></div></div>
+    </div>
+    <div class="slicebar__sub">
+      <div class="chips-row" id="faqChips" aria-label="Группа FAQ" hidden></div>
+      <div class="chips-row" id="chChips" aria-label="AI-канал"></div>
+    </div>
+  </div>
+</div>
+
+<section class="dash-section" id="overview">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow" id="ovEyebrow">Срез</div><h2 class="h2" id="ovTitle">Обзор</h2><p class="small" id="ovCaption" style="margin-top:6px"></p></div></div>
+    <div class="kpi-row" id="kpiRow"></div>
+    <div class="insight" id="ovInsight"><div class="insight__icon"><span class="a-icon a-icon--lightbulb a-icon--white a-icon--sm"></span></div><div id="ovInsightBody"></div></div>
+  </div>
+</section>
+
+<section class="dash-section" id="competitors">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">Конкуренты</div><h2 class="h2">ОН КЛИНИК и конкуренты направления</h2></div></div>
+    <div class="two-col">
+      <figure class="card chart-card" style="margin:0">
+        <div class="chart-head"><div><div class="chart-title">Рейтинг клиник</div><div class="chart-sub" id="rankSub"></div></div>
+          <div class="segmented" id="rankSeg" role="tablist" aria-label="Метрика рейтинга"></div></div>
+        <div id="rankRows"></div>
+        <div class="chart-note" id="rankNote"></div>
+      </figure>
+      <div class="table-wrap" tabindex="0" aria-label="Метрики клиник">
+        <table class="table" id="brandTable"></table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dash-section" id="channels">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">Каналы</div><h2 class="h2">Представленность по AI-моделям и ИИ-выдаче</h2></div></div>
+    <div class="card card__pad heatmap-card">
+      <div class="chart-head"><div><div class="chart-title" id="hmTitle">Клиники × AI-каналы</div><div class="chart-sub" id="hmSub"></div></div>
+        <div class="segmented" id="hmSeg" role="tablist" aria-label="Метрика тепловой карты"></div></div>
+      <div class="heatmap-table-wrap" tabindex="0"><table class="heatmap-table" id="hmTable"></table></div>
+      <div class="heatmap-scale" aria-hidden="true"><span>меньше</span><i class="hm-1"></i><i class="hm-2"></i><i class="hm-3"></i><i class="hm-4"></i><i class="hm-5"></i><i class="hm-6"></i><span>больше</span></div>
+      <div class="chart-note" id="hmNote"></div>
+    </div>
+  </div>
+</section>
+
+<section class="dash-section" id="sources">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">Лидеры в цитировании</div><h2 class="h2" id="topTitle">ТОП-10 сайтов-источников</h2><p class="small" id="topCaption" style="margin-top:6px"></p></div>
+      <div class="legend"><span><i class="l-client"></i>ОН КЛИНИК</span><span><i class="l-comp"></i>конкуренты</span><span><i class="l-other"></i>другие сайты</span></div></div>
+    <div class="card card__pad" id="topCard"></div>
+  </div>
+</section>
+
+<section class="dash-section" id="gaps">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">Точки роста</div><h2 class="h2">Запросы, где AI называет конкурентов, но не ОН КЛИНИК</h2><p class="small" id="gapCaption" style="margin-top:6px"></p></div></div>
+    <div class="gap-list" id="gapList"></div>
+  </div>
+</section>
+
+<section class="dash-section" id="metrika">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">Яндекс Метрика · весь onclinic.ru</div><h2 class="h2">Переходы на сайт из AI-моделей и ИИ-выдачи</h2><p class="small" id="mkCaption" style="margin-top:6px"></p></div></div>
+    <div class="kpi-row" id="mkKpi"></div>
+    <div class="two-col" style="margin-top:16px">
+      <figure class="card chart-card" style="margin:0">
+        <div class="chart-head"><div><div class="chart-title">Визиты по моделям и ИИ-выдаче</div><div class="chart-sub">визиты за период · достижения избранных целей</div></div></div>
+        <div id="mkModels"></div>
+      </figure>
+      <figure class="card chart-card" style="margin:0">
+        <div class="chart-head"><div><div class="chart-title">Информационный и коммерческий трафик</div><div class="chart-sub">визиты из AI-моделей и ИИ-выдачи по типу посадочной страницы</div></div></div>
+        <div id="mkTypes"></div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="dash-section" id="method">
+  <div class="wrap">
+    <div class="section__head"><div><div class="eyebrow">Методика</div><h2 class="h2">Как считались показатели</h2></div></div>
+    <div class="accordion" id="methodAcc"></div>
+  </div>
+</section>
+</main>
+
+<button type="button" class="slice-fab" id="sliceFab" hidden><span class="slice-fab__text"><small>Текущий срез</small><b id="sliceFabText"></b></span><span class="slice-fab__go">Изменить</span></button>
+
+<footer class="footer">
+  <div class="wrap footer__row"><span>Голос бренда · GEO-мониторинг ОН КЛИНИК</span><span id="footDate"></span></div>
+</footer>
+
+<script>
+window.DASH = __DATA__;
+window.AI_ICONS = __AI_ICONS__;
+</script>
+<script>
+/*__APP__*/
+</script>

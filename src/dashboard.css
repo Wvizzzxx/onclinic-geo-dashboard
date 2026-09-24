@@ -1,0 +1,190 @@
+/* Дашборд ОН КЛИНИК — надстройка над AISOV UI Kit (ui-kit.css не меняем) */
+html,body{background:var(--surface-2)}
+[hidden]{display:none!important}
+.masthead{top:env(safe-area-inset-top,0px)}
+.masthead .tag{white-space:nowrap}
+.brand{flex:0 0 auto}
+.brand span{white-space:nowrap}
+
+/* Hero: компактный, справа — сводка по направлениям */
+.research-hero{padding:56px 0 30px}
+.research-hero h1{font-size:clamp(36px,4.4vw,58px)}
+.research-hero__inner{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px}
+.hero-visual{margin:-24px -12px -40px 0;position:relative}
+.hero-visual img{display:block;width:100%;height:auto;filter:drop-shadow(0 30px 60px rgba(4,12,40,.45))}
+.hero-actions{margin-top:4px}
+.hero-btn{min-height:44px}
+.research-hero .hero-btn.btn--primary{background:#fff;color:var(--brand-800);box-shadow:none}
+.research-hero .hero-btn.btn--primary:hover{background:var(--brand-50)}
+.research-hero .hero-btn--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.28)}
+.research-hero .hero-btn--ghost:hover{border-color:#fff;color:#fff}
+.hero-stat span{font-size:13px}
+
+/* Панель среза */
+.slicebar{position:sticky;top:calc(68px + env(safe-area-inset-top,0px));z-index:40;background:rgba(248,250,252,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.slicebar__row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:12px 0}
+.slicebar__group{display:flex;align-items:center;gap:8px;min-width:0;max-width:100%}
+.slicebar__label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+.dirtabs{display:inline-flex;padding:3px;background:var(--surface-3);border:1px solid var(--border);border-radius:11px;max-width:100%;overflow-x:auto;scrollbar-width:none}
+.dirtabs button,.segmented button{cursor:pointer;white-space:nowrap}
+.dirtabs button{border:0;background:transparent;padding:8px 13px;border-radius:8px;color:var(--muted);font-weight:650;font-size:14px}
+.dirtabs button.is-active{background:var(--brand-700);color:#fff;box-shadow:var(--shadow-xs)}
+.dirtabs button:focus-visible,.segmented button:focus-visible,.chip:focus-visible,a:focus-visible{outline:2px solid var(--brand-500);outline-offset:2px}
+.chips-row{display:flex;flex-wrap:wrap;gap:6px}
+.chip{cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip img{width:16px;height:16px}
+.slicebar__sub{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:0 0 12px}
+.slice-caption{font-size:13px;color:var(--muted)}
+.slice-caption b{color:var(--ink)}
+
+.dash-section{padding:40px 0;scroll-margin-top:150px}
+.dash-section+.dash-section{padding-top:8px}
+.dash-section .section__head{margin-bottom:20px}
+.dash-section .h2{font-size:28px}
+.kpi-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+#kpiRow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.layer{display:grid;gap:10px;align-content:start;min-width:0}
+.layer__head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding:0 2px}
+.layer__title{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--ink)}
+.layer__title .a-icon{color:var(--brand-700)}
+.layer__base{font-size:12px;color:var(--muted)}
+.layer__tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.layer__tiles>*{min-width:0}
+.table thead tr.th-group th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--brand-700);background:var(--brand-50);text-align:center;padding:8px 10px;position:static}
+.table thead tr.th-group th:first-child{background:var(--surface-2)}
+.metric__value small{font-size:16px;font-weight:650;color:inherit;opacity:.8;margin-left:4px}
+.metric__delta.flat{color:var(--muted);background:var(--surface-3)}
+.metric--brand .metric__delta.up{background:rgba(255,255,255,.16);color:#fff}
+.metric--brand .metric__delta.down{background:rgba(255,255,255,.16);color:#FFD6D1}
+.insight{margin-top:16px}
+.insight p+p{margin-top:6px}
+
+/* Рейтинг (из исследования-образца) */
+.rank-row{display:grid;grid-template-columns:150px minmax(0,1fr) 70px;gap:10px;align-items:center;margin:12px 0}
+.rank-row__label{font-size:14px;color:var(--text);overflow-wrap:anywhere;line-height:1.25}
+.rank-row.is-focus .rank-row__label{font-weight:750;color:var(--brand-800)}
+.rank-row__track{height:11px;border-radius:999px;background:var(--surface-3);overflow:hidden}
+.rank-row__track i{display:block;height:100%;border-radius:999px;background:#C6CDD8;transition:width .3s ease}
+.rank-row.is-focus .rank-row__track i{background:linear-gradient(90deg,var(--brand-700),var(--brand-500))}
+.rank-row__value{text-align:right;font-size:14px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+.rank-row.is-empty .rank-row__value{color:var(--muted-2);font-weight:600}
+.chart-head .segmented{flex:0 0 auto;max-width:100%;overflow-x:auto}
+
+@media(min-width:768px){.table{min-width:640px}}
+.table tr.is-focus th,.table tr.is-focus td{background:var(--brand-50)}
+.table tr.is-focus th{color:var(--brand-800)}
+.table td.is-best{color:var(--brand-700);font-weight:750}
+.table .na{color:var(--muted-2)}
+
+/* Тепловая карта */
+.heatmap-table thead tr.hm-group th{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--brand-700);background:var(--brand-50);padding:6px 9px;text-align:center}
+.heatmap-table thead tr.hm-group th:first-child{background:transparent}
+.heatmap-table thead th img{width:18px;height:18px;display:inline-block;vertical-align:-4px;margin-right:6px}
+.heatmap-table td.hm-0{background:var(--surface-2);color:var(--muted)}
+.heatmap-table td.hm-na{color:var(--muted-2);font-weight:600;background:repeating-linear-gradient(135deg,#F8FAFC 0 6px,#F2F4F7 6px 12px)}
+.heatmap-table tr.is-focus th{color:var(--brand-800)}
+.heatmap-table tr.is-focus td{box-shadow:inset 0 0 0 2px var(--brand-700)}
+
+/* ТОП-10 доменов */
+.top-list{display:grid;gap:4px}
+.top-row{display:grid;grid-template-columns:28px minmax(170px,1.1fr) minmax(120px,2fr) 64px 92px;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--border)}
+.top-row:last-child{border-bottom:0}
+.top-row__domain{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;font-weight:650;color:var(--ink);overflow-wrap:anywhere}
+.top-row__bar{height:9px;background:var(--surface-3);border-radius:999px;overflow:hidden}
+.top-row__bar i{display:block;height:100%;background:#9AA9C9;border-radius:999px}
+.top-row.is-client .top-row__bar i{background:var(--brand-700)}
+.top-row.is-comp .top-row__bar i{background:var(--chart-4)}
+.top-row__value{text-align:right;font-size:14px;font-weight:750;color:var(--ink);font-variant-numeric:tabular-nums}
+.top-row__count{text-align:right;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.top-row .rank{margin:0}
+.tag--comp{background:#FFF6EB;color:#9A4A06;border-color:#FAD7A8}
+.legend i.l-client{background:var(--brand-700)}.legend i.l-comp{background:var(--chart-4)}.legend i.l-other{background:#9AA9C9}
+
+/* Упущенные запросы */
+.gap-list{display:grid;gap:10px}
+.gap-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 20px;align-items:start;padding:14px 16px;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.gap-item__q{font-size:15px;font-weight:600;color:var(--ink);line-height:1.4}
+.gap-item__meta{display:flex;flex-wrap:wrap;gap:6px;grid-column:1/-1}
+.gap-item__ch{display:flex;gap:4px;align-items:center}
+.gap-item__ch img{width:22px;height:22px;border-radius:6px;background:var(--surface-2);padding:2px}
+.data-state{display:flex;gap:14px;align-items:flex-start;padding:18px}
+.data-state b{display:block;color:var(--ink)}
+.data-state small{display:block;font-size:14px;color:var(--muted);margin-top:2px}
+
+/* Метрика */
+.traffic-split{display:flex;height:34px;border-radius:10px;overflow:hidden;margin:14px 0 12px}
+.traffic-split span{display:flex;align-items:center;padding:0 10px;font-size:13px;font-weight:700;color:#fff;white-space:nowrap;min-width:0;overflow:hidden}
+.traffic-legend{display:grid;gap:10px}
+.traffic-legend div{display:grid;grid-template-columns:12px minmax(0,1fr) auto auto;gap:10px;align-items:center;font-size:14px}
+.traffic-legend i{width:12px;height:12px;border-radius:4px}
+.traffic-legend b{font-variant-numeric:tabular-nums;color:var(--ink)}
+.traffic-legend em{font-style:normal;color:var(--muted);font-variant-numeric:tabular-nums;min-width:52px;text-align:right}
+.goal-pill{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;border-radius:999px;padding:2px 8px;background:#ECFDF3;color:#067647}
+.goal-pill.is-zero{background:var(--surface-3);color:var(--muted)}
+.mrow{display:grid;grid-template-columns:120px minmax(0,1fr) 64px 96px;gap:10px;align-items:center;margin:10px 0}
+.mrow__label{font-size:14px;font-weight:600;color:var(--ink)}
+.mrow__track{height:10px;background:var(--surface-3);border-radius:999px;overflow:hidden}
+.mrow__track i{display:block;height:100%;background:var(--brand-700);border-radius:999px}
+.mrow__value{text-align:right;font-size:14px;font-weight:750;font-variant-numeric:tabular-nums}
+.mrow__goals{text-align:right}
+
+.method-list{margin:0;padding-left:18px;display:grid;gap:6px}
+.method-list li{color:var(--text)}
+.accordion__body p{margin:0 0 8px}
+.accordion__body code{font-size:13px;background:var(--surface-3);padding:1px 5px;border-radius:5px;color:var(--ink)}
+
+@media(max-width:1023px){
+  .masthead__row>.tag{display:none}
+  .dirtabs{flex-wrap:wrap;overflow:visible}
+  .kpi-row{grid-template-columns:1fr 1fr}
+  #kpiRow{grid-template-columns:1fr}
+  .kpi-row>*,.two-col>*{min-width:0}
+  .top-row{grid-template-columns:28px minmax(0,1fr) 64px;grid-template-areas:"r d v" "r b c"}
+  .top-row .rank{grid-area:r}.top-row__domain{grid-area:d}.top-row__bar{grid-area:b}.top-row__value{grid-area:v}.top-row__count{grid-area:c}
+}
+@media(max-width:767px){
+  /* На телефоне панель среза не липкая (экономим высоту экрана), вместо неё — плавающая кнопка текущего среза */
+  .slicebar{position:static;backdrop-filter:none;background:var(--surface)}
+  .slicebar__label{display:none}
+  .slicebar__row{padding:14px 0 10px;gap:10px}
+  .slicebar__group{width:100%}
+  .dirtabs{display:flex;flex-wrap:wrap;gap:4px;width:100%;overflow:visible}
+  .dirtabs button{min-height:40px;flex:1 1 auto}
+  .segmented#typeSeg{display:flex;width:100%}
+  .segmented#typeSeg button{flex:1 1 0;min-height:40px}
+  .slicebar__sub{padding-bottom:14px}
+  .chips-row{gap:6px}
+  .chip{min-height:40px}
+  .dash-section{padding:28px 0}
+  .dash-section .h2{font-size:24px}
+  .chart-head{flex-direction:column;align-items:stretch}
+  .chart-head .segmented{align-self:flex-start}
+  .top-row__count{white-space:nowrap}
+  .rank-row{grid-template-columns:minmax(90px,36%) minmax(0,1fr) 58px;gap:8px}
+  .rank-row__label{font-size:13px}
+  .mrow{grid-template-columns:90px minmax(0,1fr) 54px;row-gap:4px}
+  .mrow__goals{grid-column:2/-1;text-align:left}
+  .gap-item{grid-template-columns:1fr}
+  .metric{padding:16px}
+  .metric__value{font-size:28px}
+  .metric__top{flex-wrap:wrap;gap:6px}
+  /* Тепловая карта: карточка клиники с каналами в две колонки */
+  .heatmap-table tbody tr{display:grid;grid-template-columns:1fr 1fr}
+  .heatmap-table tbody th{grid-column:1/-1}
+  .heatmap-table td{border-right:2px solid #fff;gap:8px}
+  .heatmap-table td::before{white-space:normal;line-height:1.25}
+  .heatmap-table tr.is-focus td{box-shadow:none}
+  .heatmap-table tbody tr.is-focus{border:2px solid var(--brand-700)}
+  .hero-visual{margin:8px -8px -8px}
+  .hero-actions{display:grid;grid-template-columns:1fr 1fr}
+  body.has-fab{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+}
+@media(max-width:359px){.kpi-row,.layer__tiles{grid-template-columns:1fr}}
+@media(min-width:360px) and (max-width:767px){.kpi-row,.layer__tiles{grid-template-columns:1fr 1fr}}
+.slice-fab{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px 10px 16px;min-height:52px;border:0;border-radius:14px;background:var(--brand-900);color:#fff;box-shadow:0 12px 30px rgba(11,23,63,.35);font:inherit;text-align:left;cursor:pointer}
+.slice-fab__text{display:grid;min-width:0}
+.slice-fab__text small{font-size:12px;color:#AFC1FF;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.slice-fab__text b{font-size:14px;font-weight:650;overflow-wrap:anywhere;line-height:1.3}
+.slice-fab__go{flex:0 0 auto;font-size:13px;font-weight:700;background:#fff;color:var(--brand-800);border-radius:9px;padding:8px 12px}
+.slice-fab:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){.rank-row__track i{transition:none}}
